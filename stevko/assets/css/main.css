@@ -1,0 +1,197 @@
+@font-face {
+    font-family: "Jaden";
+    src: url("fonts/Jaden.ttf");
+}
+
+@font-face {
+    font-family: "Oswald";
+    src: url("fonts/Oswald-Medium.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 1600px;
+}
+
+.wrapper {
+    width: 1400px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(7, 200px);
+    grid-template-rows: repeat(7, 200px);
+    grid-template-areas:  
+        "logo heading heading heading nav nav nav"
+        "text-block1 text-block1 text-block1 foto1 text-block2 text-block2 text-block2"
+        "text-block1 text-block1 text-block1 foto2 text-block2 text-block2 text-block2"
+        "text-block3 text-block3 text-block4 text-block4 text-block4 foto3 foto4"
+        "text-block3 text-block3 text-block4 text-block4 text-block4 text-block5 text-block5"
+        "foto5 foto5 text-block4 text-block4 text-block4 text-block5 text-block5"
+        "foto5 foto5 foto6 foto7 foto8 text-block5 text-block5";
+}
+
+#logo {
+    grid-area: logo;
+}
+
+#logo img {
+    width: 100%;
+    height: 100%;
+}
+
+#web-heading {
+    place-self: center;
+    grid-area: heading;
+}
+
+#web-heading h1 {
+    font-size: 68px;
+    font-family: "Jaden", sans-serif;
+    color: rgb(30, 30, 30);
+    transition: all 0.1s ease-in-out;
+}
+
+nav {
+    grid-area: nav;
+    place-self: center;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: block;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(30, 30, 30);
+    font-size: 32px;
+    font-family: Jaden;
+    transition: color .2s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: rgb(255, 87, 51);
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+}
+
+#image-1 {
+    grid-area: foto1;
+}
+
+#image-2 {
+    grid-area: foto2;
+}
+
+#image-3 {
+    grid-area: foto3;
+}
+
+#image-4 {
+    grid-area: foto4;
+}
+
+#image-5 {
+    grid-area: foto5;
+}
+
+#image-6 {
+    grid-area: foto6;
+}
+
+#image-7 {
+    grid-area: foto7;
+}
+
+#image-8 {
+    grid-area: foto8;
+}
+
+#text1 {
+    grid-area: text-block1;
+}
+
+#text2 {
+    grid-area: text-block2;
+}
+
+.text {
+    font-family: "Roboto", 'Segoe UI', Tahoma, sans-serif;
+    font-size: 18px;
+}
+
+.text-block h1 {
+    font-family: "Oswald", sans-serif;
+    margin: 3% 0;
+    margin-left: 5%;
+}
+
+.text-block p {
+    width: 80%;
+    margin: 0 auto;
+    text-align: justify;
+}
+
+#SK-statistics {
+    grid-area: text-block4;
+}
+
+#priznaky {
+    grid-area: text-block3;
+}
+
+#prevencia {
+    grid-area: text-block5;
+}
+
+#prevencia p {
+    width: 80%;
+    margin: 0 auto;
+    text-align: justify;
+}
+
+#priznaky p {
+    width: 80%;
+    margin: 5% auto 0 auto;
+    text-align: justify;
+}
+
+#SK-statistics h1,
+#prevencia h1,
+#priznaky h1 {
+    font-family: "Oswald", sans-serif;
+    text-align: center;
+    margin: 3% 0;
+}
+
+#SK-statistics h2 {
+    font-family: "Oswald", sans-serif;
+    font-size: 20px;
+    margin-left: 15%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+#SK-statistics ul,
+#prevencia ul,
+#priznaky ul {
+    list-style-type: circle;
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#SK-statistics ul li,
+#prevencia ul li,
+#priznaky ul li {
+    font-family: "Roboto", 'Segoe UI', Tahoma, sans-serif;;
+}
